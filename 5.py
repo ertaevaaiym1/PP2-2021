@@ -1,3 +1,9 @@
-x = str(3)    # x will be '3'
-y = int(3)    # y will be 3
-z = float(3)  # z will be 3.0
+class Solution(object):
+    def subtractProductAndSum(self, n):
+    n = input('n = ')
+    p, sum = 1, 0
+    for i in range(len(n)):
+    p = p * int(n[i])
+    sum = sum + int(n[i])
+    print(p - sum)
+        
